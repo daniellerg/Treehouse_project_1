@@ -50,7 +50,7 @@ def start_the_game():
             print("Good! Or I would have turned you into a newt!\n(You'd get better)")
             start_the_game()
         else:    
-            print("Aww that is too bad!\nThanks for playing!)
+            print("Aww that is too bad!\nThanks for playing!")
             sys.exit("Remember: Always look on the bright side of life!")    
                        
 
