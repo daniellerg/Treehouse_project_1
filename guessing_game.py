@@ -43,14 +43,13 @@ def start_the_game():
     if start_game == answer: 
         print("Well guessed! And it only took you {} attempts!".format(guess_attempt))
         tries.append(guess_attempt)
-        print("The current high score is:")
-        print(min(tries))  
         play_again = input("Would you like to play again?(Y/N)  ")
         while play_again.lower() == 'y':
-            print("Good! Or I would have turned you into a newt!\n(You'd get better)")
+            print("Good! Or I would have turned you into a newt!(You'd get better)")
+            print(min(tries),"is the current high score. Can you beat it?")
             start_the_game()
         else:    
-            print("Aww that is too bad!\nThanks for playing!")
+            print("Aww that is too bad! Thanks for playing!")
             sys.exit("Remember: Always look on the bright side of life!")    
                        
 
